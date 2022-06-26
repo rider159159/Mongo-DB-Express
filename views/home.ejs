@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>練習首頁</h3>
+  <a href="/get?city=taipei">查詢台北</a>
+  <a href="/get?city=taoyuan">查詢桃園</a>
+  <p> 曾經查詢過  <%= sessionCityName %></p>
+
+  <h3>表單輸入</h3>
+  <form action="http://localhost:3000/get">
+    <input type="text" name="city">
+    <button type="submit">送出表單</button>
+  </form>
+</body>
+</html>
